@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-brown: #3C0000;
+  --secondary-brown: #FFC857;
+  --text: #F7F7FF;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#main {
+  color: var(--text);
+  background-color: var(--primary-brown);
+  width: 98vw;
+  margin: 16px auto;
+  padding: 24px 0;
+  border-radius: 4px;
+}
+
+#title, .description {
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 18px;
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.description {
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.bg-hero {
+  width: 97%;
+  background-color: var(--secondary-brown);
+  margin: 24px auto 48px;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img-div {
+  width: min(1000px, 97%);
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  color: var(--primary-brown);
+  font-size: max(3vmin, 1rem);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.tribute-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tribute-info h2,
+#tribute-info h3 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+.tribute-description ul,
+.tribute-description blockquote {
+  width: min(600px, 97%);
+  line-height: 1.5rem;
+}
+
+.tribute-description ul {
+  margin: 2.5rem 0;
+}
+
+.tribute-description ul li {
+  box-sizing: content-box;
+  padding: 0.75rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.tribute-description blockquote p {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+#tribute-info h3 {
+  margin: 3rem 0 2.5rem;
+  font-weight: 400;
+}
+
+#tribute-link {
+  color: var(--text);
+}

@@ -1,0 +1,364 @@
+:root {
+  --blue-primary: #1e2131;
+  --blue-secondary: #26293e;
+  --text-white: #f7f7f7;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--blue-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--text-white);
+  font-weight: 400;
+}
+
+article p {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+figure figcaption {
+  color: var(--text-white);
+  font-size: 1.2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+#navbar {
+  width: 100%;
+  height: 70px;
+  padding: 0.5rem 2rem;
+  background-color: var(--blue-primary);
+  color: var(--text-white);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid whitesmoke;
+}
+
+#navbar .fa-bars {
+  font-size: 1.75rem;
+}
+
+#navbar #menu-checkbox:checked + .menu-drawer {
+  height: 570px;
+} 
+
+.navigation {
+  display: none;
+}
+
+.navigation li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.navigation li a {
+  display: inline-block;
+  color: var(--text-white);
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  color: var(--text-white);
+  letter-spacing: 0.6px;
+  background-image: url("https://images.unsplash.com/photo-1581276879432-15e50529f34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#welcome-section h1 {
+  font-size: 2.5rem;
+}
+
+#welcome-section h2 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 6vmin;
+}
+
+.overlay img {
+  width: 250px;
+  height: 250px;
+}
+
+main {
+  padding: 4rem 1rem;
+}
+
+main section {
+  margin-bottom: 6rem;
+}
+
+main section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.about {
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+  justify-items: center;
+}
+
+.about img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.tech-stack {
+  max-width: 650px;
+  flex-wrap: wrap;
+  margin: auto;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+.tech-stack-item {
+  width: 150px;
+  height: 150px;
+  background-color: var(--blue-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 200ms;
+}
+
+.tech-stack-item img {
+  width: 70px;
+  height: 70px;
+}
+
+.tech-stack-item p {
+  font-size: 1.2rem;
+}
+
+.tech-stack-item:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 8px 0 whitesmoke;
+}
+
+#next-js {
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.project-flex {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-tile {
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  display: block;
+}
+
+.project-tile img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.project-overlay {
+  background-color: rgba(242, 72, 82, 0.5);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all .3s ease-in-out;
+  height: 40px;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+.project-overlay h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.project-overlay p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-tile article {
+  margin-top: 2rem;
+}
+
+.project-tile:hover > .project-overlay {
+  height: 100%;
+  padding: 1rem 1.5rem;
+  background-color: rgba(242, 72, 82, 0.8);
+}
+
+#contact h2 {
+  font-size: 1.75rem;
+}
+
+#contact h2,
+#contact h3 {
+  text-align: center;
+}
+
+#contact form {
+  margin: 2rem auto 4rem;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  color: var(--text-white);
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+#contact form input,
+#contact form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.6rem;
+  border-radius: 4px;
+  background-color: var(--blue-primary);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  color: var(--text-white);
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem; 
+}
+
+#contact form textarea {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact-flex {
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.contact-flex a {
+  font-size: 3rem;
+  color: var(--text-white);
+}
+
+@media (min-width: 425px) {
+  .tech-stack {
+    justify-content: space-around;
+  }
+} 
+
+@media (min-width: 576px) {
+  #welcome-section h1 {
+    font-size: 2.75rem;
+  }
+
+  #welcome-section h2,
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  .overlay article {
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #navbar {
+    flex-direction: row-reverse;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  #navbar .fa-bars {
+    display: none;
+  }
+
+  main {
+    padding: 4rem;
+  }
+
+  .about {
+    grid-template-columns: 180px 400px;
+    column-gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .about {
+    grid-template-columns: 180px 560px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #welcome-section h1 {
+    font-size: 3rem;
+  }
+
+  #welcome-section h2,
+  #contact h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #welcome-section h1 {
+    font-size: 3.5rem;
+  }
+
+  #welcome-section h2,
+  #contact h2 {
+    font-size: 2.5rem;
+  }
+}

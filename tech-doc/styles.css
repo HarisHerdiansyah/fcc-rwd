@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+code {
+  display: block;
+  background-color: #eaeaea;
+  width: 90%;
+  padding: 0 2rem 1rem 2rem;
+}
+
+p {
+  text-align: justify;
+}
+
+#nav-toggle {
+  border-bottom: 1px solid black;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+span.material-symbols-outlined {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#navbar {
+  height: 100%;
+  width: calc(1rem * 18);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  color: #fff;
+  display: none;
+}
+
+#navbar header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+#nav-title {
+  display: none;
+  text-align: center;
+}
+
+#navbar ul li {
+  list-style: none;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #fff;
+  font-size: 1.1rem;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-doc {
+  padding: 1.5rem;
+}
+
+.main-section {
+  line-height: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.main-section:last-of-type {
+  margin-bottom: 0;
+}
+
+#navbar header,
+.main-section header {
+  font-size: 1.5rem;
+}
+
+.main-section article {
+  margin: 1.5rem 0;
+}
+
+.main-section article ul {
+  margin: 2rem 0 0 2rem;
+}
+
+.main-section article p,
+.main-section article ul li {
+  margin-bottom: 1rem;
+}
+
+.main-section pre {
+  white-space: pre-line;
+}
+
+.main-section code {
+  margin: 0 auto 1rem;
+}
+
+.main-section ul.child-list {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  #nav-toggle {
+    display: none;
+  }
+
+  #navbar,
+  #nav-title {
+    display: block;
+  }
+
+  #main-doc {
+    padding: 3rem;
+    margin-left: calc(1rem * 18);
+  }
+
+  #navbar header,
+  .main-section header {
+    font-size: 1.8rem;
+  }
+
+  #navbar header {
+    padding: 1rem 0;
+  }
+
+  #navbar header#close {
+    display: none;
+  }
+}

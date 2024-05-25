@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Personal Portofolio</title>
+  </head>
+  <body>
+    <nav id="navbar" class="flex">
+      <i class="fas fa-bars"></i>
+      <ul class="navigation">
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="welcome-section">
+      <div class="overlay">
+        <article>
+          <h1>Hi there!</h1>
+          <h1>I'm Haris Herdiansyah</h1>
+          <h2>Frontend Developer</h2>
+        </article>
+      </div>
+    </section>
+    <main>
+      <section id="about">
+        <h3>Get to know about me!</h3>
+        <div class="grid about">
+          <img src="./image/profile.jpg" alt="Profile Photo" />
+          <article>
+            <p>
+              I'm Haris Herdiansyah. Front-end developer with around one year
+              experience worked in Front-end development. Highly-focused on
+              web-apps development with <strong>React JS</strong> and support
+              tools such as
+              <strong>Redux, CSS Framework, and TypeScript</strong>. And also
+              experienced in mobile-apps development, focused on Android, with
+              <strong>React Native</strong>.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h3>Tech-stack and support tools :</h3>
+        <div class="flex tech-stack">
+          <div class="tech-stack-item">
+            <img src="./image/javascript-svgrepo-com.svg" alt="JavaScript" />
+            <p>JavaScript</p>
+          </div>
+          <div class="tech-stack-item">
+            <img
+              src="./image/typescript-icon-svgrepo-com.svg"
+              alt="TypeScript"
+            />
+            <p>TypeScript</p>
+          </div>
+          <div class="tech-stack-item">
+            <img src="./image/sass-svgrepo-com.svg" alt="Sass" />
+            <p>Sass</p>
+          </div>
+          <div class="tech-stack-item">
+            <img src="./image/firebase-svgrepo-com.svg" alt="Firebase" />
+            <p>Firebase</p>
+          </div>
+          <div class="tech-stack-item">
+            <img src="./image/react-svgrepo-com.svg" alt="React" />
+            <p>React</p>
+          </div>
+          <div class="tech-stack-item">
+            <img src="./image/redux-logo-svgrepo-com.svg" alt="Redux" />
+            <p>Redux</p>
+          </div>
+          <div class="tech-stack-item">
+            <img
+              src="./image/nextjs-icon-svgrepo-com.svg"
+              alt="Next JS"
+              id="next-js"
+            />
+            <p>Next JS</p>
+          </div>
+          <div class="tech-stack-item">
+            <img src="./image/jira-svgrepo-com.svg" alt="Jira" />
+            <p>Jira</p>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <h3>Latest Project and Portofolio :</h3>
+        <div class="flex project-flex">
+          <a
+            href="https://www.freecodecamp.org/Haris_Herdiansyah"
+            target="_blank"
+            class="project-tile"
+          >
+            <img src="./image/project-1.jpg" alt="Project 1" />
+            <div class="project-overlay">
+              <h4>Project No. 1</h4>
+              <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere, quas?
+                </p>
+                <p>Related tech-stack: React, Firebase, TypeScript</p>
+              </article>
+            </div>
+          </a>
+          <a
+            href="https://www.freecodecamp.org/Haris_Herdiansyah"
+            target="_blank"
+            class="project-tile"
+          >
+            <img src="./image/project-2.jpg" alt="Project 2" />
+            <div class="project-overlay">
+              <h4>Project No. 2</h4>
+              <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere, quas?
+                </p>
+                <p>Related tech-stack: React, Firebase, TypeScript</p>
+              </article>
+            </div>
+          </a>
+          <a
+            href="https://www.freecodecamp.org/Haris_Herdiansyah"
+            target="_blank"
+            class="project-tile"
+          >
+            <img src="./image/project-3.jpg" alt="Project 3" />
+            <div class="project-overlay">
+              <h4>Project No. 3</h4>
+              <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere, quas?
+                </p>
+                <p>Related tech-stack: React, Firebase, TypeScript</p>
+              </article>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Let's Work Together!</h2>
+        <form>
+          <label for="email">
+            Email :
+            <input type="email" name="email" id="email" />
+          </label>
+          <label for="subject">
+            Subject :
+            <input type="text" name="subject" id="subject" />
+          </label>
+          <label for="message">
+            Message :
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+        </form>
+        <div class="contact-alternative">
+          <h3>Or contact me below :</h3>
+          <div class="flex contact-flex">
+            <a href="mailto:harisherdian001@gmail.com" target="_blank"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/haris-herdiansyah-b2a419256/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://wa.me/62895395247644" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
